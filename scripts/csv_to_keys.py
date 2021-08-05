@@ -11,7 +11,7 @@ from armrobot_py.srv import Keys, Command
 class CsvToKeys():
     def __init__(self):
         rospy.init_node('csv_to_keys')
-        self.path = '/home/yohsuke/ドキュメント/motion/'
+        self.path = '~/ドキュメント/motion/'
         self.df = self.read_csv()
         rospy.wait_for_service('service_keys')
         rospy.wait_for_service('service_command')

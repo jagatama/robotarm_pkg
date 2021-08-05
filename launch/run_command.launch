@@ -1,6 +1,7 @@
 <launch>
     <node pkg="rosserial_python" name="ros_serial" type="serial_node.py">
         <param name="port" value="/dev/ttyACM0"/>
+        <param name="baud" value="115200" />
     </node>
     <node pkg="armrobot_py" name="keyboard_driver" type="keyboard_driver.py" output="screen"/>
     <node pkg="armrobot_py" name="calc_ik" type="ik6dof.py" output="screen"/>

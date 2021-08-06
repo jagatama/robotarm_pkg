@@ -27,19 +27,19 @@ catkin_make
  
 # Usage
 
- keyboard controll
+ keyboard control
 
 ```bash
 roslaunch armrobot_py run_command.launch
 ```
 
-csv file controll
+csv file control
 
 ```bash
 roslaunch armrobot_py run_csv.launch
 ```
 
-ps3 controll
+ps3 control
 
 ```bash
 roslaunch armrobot_py ps3_control.launch
